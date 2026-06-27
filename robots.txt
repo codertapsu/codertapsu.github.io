@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codertapsu.github.io/sitemap.xml

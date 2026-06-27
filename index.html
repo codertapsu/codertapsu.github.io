@@ -1,1520 +1,774 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    >
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    >
-    <title>vCard - Personal Portfolio</title>
-
-    <!-- - favicon -->
-    <link
-      rel="shortcut icon"
-      href="/assets/images/logo.ico"
-      type="image/x-icon"
-    >
-
-    <!-- - custom css link -->
-    <link
-      rel="stylesheet"
-      href="/assets/css/style.css"
-    >
-
-    <!-- - google font link -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    >
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    >
-  </head>
-
-  <body>
-
-    <!-- - #MAIN -->
-
-    <main>
-
-      <!-- - #SIDEBAR -->
-
-      <aside
-        class="sidebar"
-        data-sidebar
-      >
-
-        <div class="sidebar-info">
-
-          <figure class="avatar-box">
-            <img
-              src="/assets/images/my-avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            >
-          </figure>
-
-          <div class="info-content">
-            <h1
-              class="name"
-              title="Richard hanrick"
-            >
-              Richard hanrick
-            </h1>
-
-            <p class="title">Web developer</p>
-          </div>
-
-          <button
-            class="info_more-btn"
-            data-sidebar-btn
-          >
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="sidebar-info_more">
-
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a
-                  href="mailto:richard@example.com"
-                  class="contact-link"
-                >
-                  richard@example.com
-                </a>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a
-                  href="tel:+12133522795"
-                  class="contact-link"
-                >
-                  +1 (213) 352-2795
-                </a>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">June 23, 1982</time>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Sacramento, California, USA</address>
-              </div>
-
-            </li>
-
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </aside>
-
-      <!-- - #main-content -->
-
-      <div class="main-content">
-
-        <!-- - #NAVBAR -->
-
-        <nav class="navbar">
-
-          <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <button
-                class="navbar-link  active"
-                data-nav-link
-              >
-                About
-              </button>
-            </li>
-
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-              >
-                Resume
-              </button>
-            </li>
-
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-              >
-                Portfolio
-              </button>
-            </li>
-
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-              >
-                Blog
-              </button>
-            </li>
-
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-              >
-                Contact
-              </button>
-            </li>
-
-          </ul>
-
-        </nav>
-
-        <!-- - #ABOUT -->
-
-        <article
-          class="about  active"
-          data-page="about"
-        >
-
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print
-              media.
-              I enjoy
-              turning complex problems into simple, beautiful and intuitive designs.
-            </p>
-
-            <p>
-              My job is to build your website so that it is functional and user-friendly but at the same time
-              attractive.
-              Moreover, I
-              add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-              across your
-              message and identity in the most creative way. I created web design for many famous brand companies.
-            </p>
-          </section>
-
-          <!-- - service -->
-
-          <section class="service">
-
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img
-                    src="/assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  >
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a professional level.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img
-                    src="/assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  >
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img
-                    src="/assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  >
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and Android.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img
-                    src="/assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  >
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional level.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </section>
-
-          <!-- - testimonials -->
-
-          <section class="testimonials">
-
-            <h3 class="h3 testimonials-title">Testimonials</h3>
-
-            <ul class="testimonials-list has-scrollbar">
-
-              <li class="testimonials-item">
-                <div
-                  class="content-card"
-                  data-testimonials-item
-                >
-
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="/assets/images/avatar-1.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    >
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Daniel lewis
-                  </h4>
-
-                  <div
-                    class="testimonials-text"
-                    data-testimonials-text
-                  >
-                    <p>
-                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
-                      a
-                      lot of experience
-                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing
-                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div
-                  class="content-card"
-                  data-testimonials-item
-                >
-
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="/assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    >
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div
-                    class="testimonials-text"
-                    data-testimonials-text
-                  >
-                    <p>
-                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
-                      a
-                      lot of experience
-                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing
-                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div
-                  class="content-card"
-                  data-testimonials-item
-                >
-
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="/assets/images/avatar-3.png"
-                      alt="Emily evans"
-                      width="60"
-                      data-testimonials-avatar
-                    >
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Emily evans
-                  </h4>
-
-                  <div
-                    class="testimonials-text"
-                    data-testimonials-text
-                  >
-                    <p>
-                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
-                      a
-                      lot of experience
-                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing
-                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div
-                  class="content-card"
-                  data-testimonials-item
-                >
-
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="/assets/images/avatar-4.png"
-                      alt="Henry william"
-                      width="60"
-                      data-testimonials-avatar
-                    >
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Henry william
-                  </h4>
-
-                  <div
-                    class="testimonials-text"
-                    data-testimonials-text
-                  >
-                    <p>
-                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
-                      a
-                      lot of experience
-                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing
-                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-            </ul>
-
-          </section>
-
-          <!-- - testimonials modal -->
-
-          <div
-            class="modal-container"
-            data-modal-container
-          >
-
-            <div
-              class="overlay"
-              data-overlay
-            ></div>
-
-            <section class="testimonials-modal">
-
-              <button
-                class="modal-close-btn"
-                data-modal-close-btn
-              >
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="/assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  >
-                </figure>
-
-                <img
-                  src="/assets/images/icon-quote.svg"
-                  alt="quote icon"
-                >
-              </div>
-
-              <div class="modal-content">
-
-                <h4
-                  class="h3 modal-title"
-                  data-modal-title
-                >
-                  Daniel lewis
-                </h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-
-            </section>
-
-          </div>
-
-          <!-- - clients -->
-
-          <section class="clients">
-
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-1-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-2-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-3-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-4-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-5-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="/assets/images/logo-6-color.png"
-                    alt="client logo"
-                  >
-                </a>
-              </li>
-
-            </ul>
-
-          </section>
-
-        </article>
-
-        <!-- - #RESUME -->
-
-        <article
-          class="resume"
-          data-page="resume"
-        >
-
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-                <span>2007 — 2008</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                  quas molestias
-                  exceptur.
-                </p>
-
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-                <span>2006 — 2007</span>
-
-                <p class="timeline-text">
-                  Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                  omnis..
-                </p>
-
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-                <span>2002 — 2004</span>
-
-                <p class="timeline-text">
-                  Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed
-                  consequuntur
-                  magni dolores
-                  eos.
-                </p>
-
-              </li>
-
-            </ol>
-
-          </section>
-
-          <section class="timeline">
-
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Creative director</h4>
-
-                <span>2015 — Present</span>
-
-                <p class="timeline-text">
-                  Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                  qvuas
-                  molestias
-                  exceptur.
-                </p>
-
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Art director</h4>
-
-                <span>2013 — 2015</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                  quas molestias
-                  exceptur.
-                </p>
-
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Web designer</h4>
-
-                <span>2010 — 2013</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                  quas molestias
-                  exceptur.
-                </p>
-
-              </li>
-
-            </ol>
-
-          </section>
-
-          <section class="skill">
-
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Web design</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div
-                    class="skill-progress-fill"
-                    style="width: 80%;"
-                  ></div>
-                </div>
-
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Graphic design</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div
-                    class="skill-progress-fill"
-                    style="width: 70%;"
-                  ></div>
-                </div>
-
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Branding</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div
-                    class="skill-progress-fill"
-                    style="width: 90%;"
-                  ></div>
-                </div>
-
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">WordPress</h5>
-                  <data value="50">50%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div
-                    class="skill-progress-fill"
-                    style="width: 50%;"
-                  ></div>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </section>
-
-        </article>
-
-        <!-- - #PORTFOLIO -->
-
-        <article
-          class="portfolio"
-          data-page="portfolio"
-        >
-
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-
-            <ul class="filter-list">
-
-              <li class="filter-item">
-                <button
-                  class="active"
-                  data-filter-btn
-                >
-                  All
-                </button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-
-            </ul>
-
-            <div class="filter-select-box">
-
-              <button
-                class="filter-select"
-                data-select
-              >
-
-                <div
-                  class="select-value"
-                  data-selecct-value
-                >
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-
-              </button>
-
-              <ul class="select-list">
-
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-
-              </ul>
-
-            </div>
-
-            <ul class="project-list">
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-
-                </a>
-              </li>
-
-              <li
-                class="project-item  active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="/assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
-
-                </a>
-              </li>
-
-            </ul>
-
-          </section>
-
-        </article>
-
-        <!-- - #BLOG -->
-
-        <article
-          class="blog"
-          data-page="blog"
-        >
-
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
-
-          <section class="blog-posts">
-
-            <ul class="blog-posts-list">
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-1.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-2.jpg"
-                      alt="Best fonts every designer"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                    <p class="blog-text">
-                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-3.jpg"
-                      alt="Design digest #80"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                    <p class="blog-text">
-                      Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis
-                      suscipit.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-4.jpg"
-                      alt="UI interactions of the week"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                    <p class="blog-text">
-                      Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-5.jpg"
-                      alt="The forgotten art of spacing"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                    <p class="blog-text">
-                      Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img
-                      src="/assets/images/blog-6.jpg"
-                      alt="Design digest #79"
-                      loading="lazy"
-                    >
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                    <p class="blog-text">
-                      Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-            </ul>
-
-          </section>
-
-        </article>
-
-        <!-- - #CONTACT -->
-
-        <article
-          class="contact"
-          data-page="contact"
-        >
-
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section
-            class="mapbox"
-            data-mapbox
-          >
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form
-              action="#"
-              class="form"
-              data-form
-            >
-
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                >
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                >
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button
-                class="form-btn"
-                type="submit"
-                disabled
-                data-form-btn
-              >
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-
-            </form>
-
-          </section>
-
-        </article>
-
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect</title>
+  <meta name="description"
+    content="Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect with 8+ years building large-scale web, desktop and mobile systems in Angular, React, Node/NestJS, Tauri and Flutter. Based in Da Nang, Vietnam; open to remote work worldwide.">
+  <meta name="author" content="Khanh Hoang (Marcus)">
+  <meta name="keywords"
+    content="Khanh Hoang, Marcus, codertapsu, Hoàng Duy Khánh, Senior Software Engineer, Technical Architect, Frontend Architect, Angular, React, Next.js, Vue.js, Node.js, NestJS, RxJS, Electron, Tauri, Rust, Flutter, Da Nang, Vietnam">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://codertapsu.github.io/">
+
+  <!-- Theme colour matches the active palette in each scheme -->
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+  <!-- media-less fallback kept in sync with the active theme by JS -->
+  <meta name="theme-color" content="#0d1117">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect">
+  <meta property="og:description"
+    content="8+ years building large-scale web, desktop and mobile systems in Angular, React, Node/NestJS, Tauri and Flutter. Based in Da Nang, Vietnam; open to remote work worldwide.">
+  <meta property="og:url" content="https://codertapsu.github.io/">
+  <meta property="og:image" content="https://codertapsu.github.io/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect">
+  <meta property="og:site_name" content="Khanh Hoang (Marcus)">
+  <meta property="profile:first_name" content="Khanh">
+  <meta property="profile:last_name" content="Hoang">
+  <meta property="profile:username" content="codertapsu">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect">
+  <meta name="twitter:description"
+    content="8+ years building large-scale web, desktop and mobile systems in Angular, React, Node/NestJS, Tauri and Flutter.">
+  <meta name="twitter:image" content="https://codertapsu.github.io/assets/images/og-image.png">
+  <meta name="twitter:image:alt" content="Khanh Hoang (Marcus) — Senior Software Engineer &amp; Technical Architect">
+
+  <!-- Favicons / PWA -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="author" href="/humans.txt">
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (mono accents). latin-ext covers Vietnamese diacritics. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Apply saved/system theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* localStorage unavailable — keep default dark */ }
+    })();
+  </script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://codertapsu.github.io/#person",
+        "name": "Khanh Hoang",
+        "alternateName": ["Hoàng Duy Khánh", "Marcus", "codertapsu"],
+        "jobTitle": "Senior Software Engineer & Technical Architect",
+        "url": "https://codertapsu.github.io/",
+        "image": "https://codertapsu.github.io/assets/images/avatar.jpg",
+        "email": "mailto:hoangduykhanh21@gmail.com",
+        "telephone": "+84368438486",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Da Nang",
+          "addressCountry": "VN"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Da Nang University of Science and Technology"
+        },
+        "knowsAbout": ["Software Architecture", "Frontend Architecture", "Angular", "React", "Next.js", "Vue.js", "Node.js", "NestJS", "TypeScript", "RxJS", "NgRx", "Electron", "Tauri", "Rust", "Flutter", "Microservices", "Docker"],
+        "sameAs": [
+          "https://github.com/codertapsu",
+          "https://www.linkedin.com/in/khanhhoangdn",
+          "https://gitlab.com/codertapsu",
+          "https://play.google.com/store/apps/developer?id=codertapsu"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://codertapsu.github.io/#website",
+        "url": "https://codertapsu.github.io/",
+        "name": "Khanh Hoang (Marcus) — Portfolio",
+        "description": "Portfolio of Khanh Hoang (Marcus), Senior Software Engineer & Technical Architect.",
+        "inLanguage": "en",
+        "author": { "@id": "https://codertapsu.github.io/#person" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Inline SVG icon sprite (no icon-font CDN). Themes via currentColor. -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+      <symbol id="i-gitlab" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21.42l3.68-11.33H8.32L12 21.42zM3.18 10.09L2.07 13.5a.75.75 0 0 0 .27.84L12 21.42 3.18 10.09zm5.14 0H3.18l2.04-6.28c.1-.32.56-.32.66 0l2.44 6.28zM20.82 10.09l1.11 3.41a.75.75 0 0 1-.27.84L12 21.42l8.82-11.33zm-5.14 0h5.14l-2.04-6.28c-.1-.32-.56-.32-.66 0l-2.44 6.28z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M3.6 1.84a1 1 0 0 0-.5.87v18.58a1 1 0 0 0 .5.87l10.3-10.16L3.6 1.84zM16.3 9.05l-2.6 2.57 2.6 2.57 3.5-2a1.14 1.14 0 0 0 0-1.98l-3.5-1.16zm-1.36 3.93L4.7 23.1c.36.16.78.12 1.13-.08l9.74-5.55-1.63-1.49zM5.83.98c-.35-.2-.77-.24-1.13-.08l10.24 10.12 1.63-1.49L5.83.98z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2z"/></symbol>
+      <symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 5 2 9l10 4 10-4z"/><path d="M6 10.5V16c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5.5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Sticky top bar (tablet / mobile only) -->
+  <div class="topbar">
+    <a class="topbar__brand" href="#about" aria-label="Khanh Hoang (Marcus) — top of page">
+      <span class="topbar__brand-mark">M</span>
+      <span class="topbar__brand-text">Marcus<span class="topbar__brand-sub"> / codertapsu</span></span>
+    </a>
+    <nav class="topbar__nav" aria-label="Sections">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <button type="button" class="icon-btn topbar__theme" data-theme-toggle aria-pressed="true"
+      aria-label="Dark theme">
+      <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+      <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+    </button>
+    <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  </div>
+
+  <div class="layout">
+
+    <!-- Identity card -->
+    <header class="identity">
+      <div class="identity__top">
+        <figure class="identity__avatar">
+          <img src="/assets/images/avatar.jpg" width="96" height="96"
+            alt="Portrait of Khanh Hoang (Marcus)">
+        </figure>
+        <button type="button" class="icon-btn identity__theme" data-theme-toggle aria-pressed="true"
+          aria-label="Dark theme">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+        </button>
       </div>
 
-    </main>
+      <h1 class="identity__name">Khanh Hoang <span class="identity__alias">(Marcus)</span></h1>
+      <p class="identity__vname" lang="vi">Hoàng Duy Khánh</p>
+      <p class="identity__role">Senior Software Engineer <span aria-hidden="true">·</span> Technical Architect</p>
 
-    <!-- - custom js link -->
-    <script src="/assets/js/script.js"></script>
+      <p class="identity__status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Da Nang, Vietnam — open to remote worldwide</span>
+      </p>
 
-    <!-- - ionicon link -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+      <div class="identity__cta">
+        <a class="btn btn--primary" href="mailto:hoangduykhanh21@gmail.com">
+          <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+          <span>Email me</span>
+        </a>
+        <a class="btn btn--ghost"
+          href="https://docs.google.com/document/d/1BOnp7_R7WwyaU9pjC7b275d3elbm4ogZ/export?format=pdf"
+          target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
 
-  </body>
+      <ul class="identity__social">
+        <li>
+          <a href="https://github.com/codertapsu" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/khanhhoangdn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://gitlab.com/codertapsu" target="_blank" rel="noopener noreferrer" aria-label="GitLab (opens in a new tab)">
+            <svg class="icon" aria-hidden="true"><use href="#i-gitlab"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/developer?id=codertapsu" target="_blank" rel="noopener noreferrer" aria-label="Google Play developer page (opens in a new tab)">
+            <svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg>
+          </a>
+        </li>
+      </ul>
+
+      <nav class="identity__nav" aria-label="Sections">
+        <ul>
+          <li><a href="#about" data-nav><span class="identity__nav-i">01</span> About</a></li>
+          <li><a href="#skills" data-nav><span class="identity__nav-i">02</span> Skills</a></li>
+          <li><a href="#experience" data-nav><span class="identity__nav-i">03</span> Experience</a></li>
+          <li><a href="#projects" data-nav><span class="identity__nav-i">04</span> Projects</a></li>
+          <li><a href="#contact" data-nav><span class="identity__nav-i">05</span> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Content column -->
+    <div class="content">
+      <main id="main" tabindex="-1">
+
+        <!-- 01 · About -->
+        <section id="about" class="section" aria-labelledby="about-title">
+          <p class="eyebrow"><span>01</span> / About</p>
+          <h2 id="about-title" class="section__title">Building systems that ship</h2>
+
+          <p class="lead">I architect and ship large-scale web, desktop and mobile systems —
+            with a focus on insurance and e-commerce platforms.</p>
+
+          <div class="prose">
+            <p>I'm a Senior Software Engineer and Technical Architect with 8+ years of experience,
+              based in Da Nang, Vietnam and working with teams worldwide. My core strength is
+              frontend architecture — I've worked across every major Angular version (2 through 19),
+              along with React/Next.js and Vue — and I'm just as comfortable across the stack with
+              Node.js and NestJS.</p>
+            <p>I build beyond the browser too: desktop apps with Electron and Tauri (Rust), and mobile
+              apps with Flutter that are live on Google Play. I care about scalable architecture,
+              clean code, performance, and turning complex business flows into systems teams can
+              maintain and grow.</p>
+          </div>
+
+          <!-- Stats -->
+          <ul class="stats" aria-label="Career at a glance">
+            <li class="stat">
+              <span class="stat__num" data-count="8" data-suffix="+">8+</span>
+              <span class="stat__label">Years experience</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num" data-count="16">16</span>
+              <span class="stat__label">Projects delivered</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num" data-count="3">3</span>
+              <span class="stat__label">Apps on Google Play</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num" data-count="6">6</span>
+              <span class="stat__label">Global markets served</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 02 · Skills -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+          <p class="eyebrow"><span>02</span> / Skills</p>
+          <h2 id="skills-title" class="section__title">What I do</h2>
+
+          <ul class="services">
+            <li class="service">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg></span>
+              <h3 class="service__title">Frontend Architecture</h3>
+              <p class="service__text">Scalable Angular, React/Next.js and Vue front ends — design systems,
+                state management with RxJS &amp; NgRx, and large framework upgrades.</p>
+            </li>
+            <li class="service">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"></use></svg></span>
+              <h3 class="service__title">Full-Stack Engineering</h3>
+              <p class="service__text">APIs and services with Node.js &amp; NestJS, Redis, PostgreSQL and MongoDB —
+                packaged with Docker and built for microservices.</p>
+            </li>
+            <li class="service">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-monitor"></use></svg></span>
+              <h3 class="service__title">Desktop &amp; Cross-Platform</h3>
+              <p class="service__text">Native-feeling desktop apps with Electron and Tauri (Rust),
+                plus mobile apps built in Flutter and shipped to Google Play.</p>
+            </li>
+            <li class="service">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-compass"></use></svg></span>
+              <h3 class="service__title">Technical Leadership</h3>
+              <p class="service__text">Architecture, code reviews, mentoring and CI/CD —
+                turning complex business flows into systems teams can maintain.</p>
+            </li>
+          </ul>
+
+          <div class="skills-cluster">
+            <h3 class="skills-cluster__label">Advanced</h3>
+            <ul class="chips" aria-label="Advanced skills">
+              <li class="chip chip--adv">TypeScript</li>
+              <li class="chip chip--adv">JavaScript</li>
+              <li class="chip chip--adv">Angular</li>
+              <li class="chip chip--adv">React</li>
+              <li class="chip chip--adv">Next.js</li>
+              <li class="chip chip--adv">Vue.js</li>
+              <li class="chip chip--adv">NestJS</li>
+              <li class="chip chip--adv">Node.js</li>
+              <li class="chip chip--adv">RxJS</li>
+              <li class="chip chip--adv">NgRx</li>
+              <li class="chip chip--adv">Electron</li>
+              <li class="chip chip--adv">Jasmine</li>
+              <li class="chip chip--adv">HTML &amp; CSS</li>
+              <li class="chip chip--adv">Flexbox / Grid</li>
+            </ul>
+          </div>
+
+          <div class="skills-cluster">
+            <h3 class="skills-cluster__label">Working knowledge</h3>
+            <ul class="chips" aria-label="Working-knowledge skills">
+              <li class="chip">Tauri / Rust</li>
+              <li class="chip">Flutter</li>
+              <li class="chip">Redis</li>
+              <li class="chip">RabbitMQ</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">MongoDB</li>
+              <li class="chip">TypeORM</li>
+              <li class="chip">Prisma</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Microservices</li>
+              <li class="chip">Micro-frontends</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 03 · Experience -->
+        <section id="experience" class="section" aria-labelledby="experience-title">
+          <p class="eyebrow"><span>03</span> / Experience</p>
+          <h2 id="experience-title" class="section__title">Where I've worked</h2>
+
+          <ol class="timeline">
+            <li class="tl">
+              <div class="tl__head">
+                <h3 class="tl__role">Senior Technical Architect</h3>
+                <span class="badge badge--now">Now</span>
+              </div>
+              <p class="tl__org">Global Insurance Systems <span aria-hidden="true">·</span> FPT Software</p>
+              <p class="tl__meta"><span>Jul 2024 — Present</span> <span aria-hidden="true">·</span> <span>Global market</span></p>
+              <p class="tl__text">Lead architecture across multiple squads on the Singlife insurance platform,
+                consolidating technical solutions and advising clients while contributing to a second large program.</p>
+              <ul class="tl__tags">
+                <li>Angular</li><li>React</li><li>Signals</li><li>Okta</li><li>D3.js</li><li>Web Workers</li><li>RxJS</li>
+              </ul>
+            </li>
+
+            <li class="tl">
+              <h3 class="tl__role">Senior Software Engineer</h3>
+              <p class="tl__org">Insurance &amp; Investment Platform <span aria-hidden="true">·</span> Singlife (Singapore)</p>
+              <p class="tl__meta"><span>Oct 2023 — Present</span> <span aria-hidden="true">·</span> <span>Singapore</span></p>
+              <p class="tl__text">Led frontend across multiple portals and drove an Angular v7 → v19 upgrade —
+                ~15% faster builds, ~20% smaller bundles, ~30% faster loads and +30–40% test coverage.</p>
+              <ul class="tl__tags">
+                <li>Angular</li><li>RxJS</li><li>Signals</li><li>Okta</li><li>ESLint / Prettier</li><li>PDF / Excel export</li>
+              </ul>
+            </li>
+
+            <li class="tl">
+              <h3 class="tl__role">Senior Software Engineer</h3>
+              <p class="tl__org">G-PTM Admin Platform <span aria-hidden="true">·</span> NashTech</p>
+              <p class="tl__meta"><span>Jan 2023 — Oct 2023</span> <span aria-hidden="true">·</span> <span>Germany</span></p>
+              <p class="tl__text">Built a scalable admin system from scratch — invoice tracking, lump-sum and
+                customer management, and rich reporting.</p>
+              <ul class="tl__tags">
+                <li>Angular 16</li><li>Jasmine</li><li>Signals</li><li>Azure B2C</li><li>D3.js</li><li>Web Workers</li>
+              </ul>
+            </li>
+
+            <li class="tl">
+              <h3 class="tl__role">Senior Software Engineer</h3>
+              <p class="tl__org">Freewill E-commerce <span aria-hidden="true">·</span> NashTech</p>
+              <p class="tl__meta"><span>Oct 2021 — Dec 2022</span> <span aria-hidden="true">·</span> <span>Japan</span></p>
+              <p class="tl__text">Delivered a vendor-to-consumer e-commerce platform from scratch, supporting
+                millions of users with product listings, purchase flows and order management.</p>
+              <ul class="tl__tags">
+                <li>Next.js</li><li>NestJS</li><li>Redis</li><li>Docker</li><li>MongoDB</li><li>Microservices</li><li>Jest</li>
+              </ul>
+            </li>
+
+            <li class="tl">
+              <h3 class="tl__role">Senior Frontend Developer</h3>
+              <p class="tl__org">Colonial Insurance Revamp <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Jul 2021 — Sep 2021</span> <span aria-hidden="true">·</span> <span>United States</span></p>
+              <p class="tl__text">Modernized a legacy US insurance UI — analyzed and documented business logic
+                and refactored components ahead of the revamp.</p>
+              <ul class="tl__tags"><li>Angular 10</li><li>Jasmine</li><li>RxJS</li></ul>
+            </li>
+
+            <li class="tl">
+              <h3 class="tl__role">Senior Frontend Developer</h3>
+              <p class="tl__org">e-Form Approval System <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Jan 2021 — Jul 2021</span> <span aria-hidden="true">·</span> <span>Singapore</span></p>
+              <p class="tl__text">Built a configurable form-approval workflow with real-time updates and
+                drag-and-drop form building.</p>
+              <ul class="tl__tags"><li>Angular 11</li><li>Express</li><li>Docker</li><li>SignalR</li><li>PDF export</li></ul>
+            </li>
+
+            <!-- Earlier roles (kept in the DOM for SEO &amp; print; collapsed by default) -->
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Senior Frontend Developer</h3>
+              <p class="tl__org">HConnect <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Oct 2020 — Dec 2020</span> <span aria-hidden="true">·</span> <span>United States / Australia</span></p>
+              <p class="tl__text">Delivered customer-facing features for the HConnect web app and a seasonal
+                interactive Xmas-Card experience.</p>
+              <ul class="tl__tags"><li>Next.js</li><li>React</li><li>RxJS</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Senior Frontend Developer</h3>
+              <p class="tl__org">Sitecore Admin <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Jun 2020 — Sep 2020</span> <span aria-hidden="true">·</span> <span>Australia</span></p>
+              <p class="tl__text">Built and maintained content-management components on the Sitecore platform.</p>
+              <ul class="tl__tags"><li>Sitecore</li><li>C# MVC</li><li>Razor</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Senior Frontend Developer</h3>
+              <p class="tl__org">Facelift <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Mar 2020 — Aug 2020</span> <span aria-hidden="true">·</span> <span>Singapore</span></p>
+              <p class="tl__text">Built a document-comparison product with interactive charts and a refreshed UI.</p>
+              <ul class="tl__tags"><li>Vue.js</li><li>Vuex</li><li>Charts</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Appraisal <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Dec 2019 — Feb 2020</span> <span aria-hidden="true">·</span> <span>Vietnam</span></p>
+              <p class="tl__text">Delivered an appraisal management UI with rich data tables, charts and state management.</p>
+              <ul class="tl__tags"><li>Angular 8</li><li>NgRx</li><li>Angular Material</li><li>Ant Design</li><li>Highcharts</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Recruiting <span aria-hidden="true">·</span> Saigon Technology</p>
+              <p class="tl__meta"><span>Jun 2019 — Nov 2019</span> <span aria-hidden="true">·</span> <span>Vietnam</span></p>
+              <p class="tl__text">Built features for a recruiting platform with a component-driven Vue UI.</p>
+              <ul class="tl__tags"><li>Vue.js</li><li>Vuetify</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Drop Consumer Services <span aria-hidden="true">·</span> Acazia Software</p>
+              <p class="tl__meta"><span>Aug 2018 — May 2019</span> <span aria-hidden="true">·</span> <span>United States</span></p>
+              <p class="tl__text">Built interactive consumer-services web views with animations and in-app payments.</p>
+              <ul class="tl__tags"><li>React</li><li>TypeScript</li><li>RxJS</li><li>GSAP</li><li>Stripe</li><li>SASS</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Legal Timber Sources Database <span aria-hidden="true">·</span> BYS</p>
+              <p class="tl__meta"><span>Jan 2017 — Sep 2017</span> <span aria-hidden="true">·</span> <span>Vietnam</span></p>
+              <p class="tl__text">Built data-management screens for a legal timber sourcing system.</p>
+              <ul class="tl__tags"><li>Angular 4</li><li>TypeScript</li><li>Angular Material</li><li>SASS</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Hoa Binh Bidding Package Management <span aria-hidden="true">·</span> BYS</p>
+              <p class="tl__meta"><span>Mar 2016 — Dec 2016</span> <span aria-hidden="true">·</span> <span>Vietnam</span></p>
+              <p class="tl__text">Built bidding and package-management screens for a construction enterprise.</p>
+              <ul class="tl__tags"><li>Angular 4</li><li>Angular Material</li><li>Bootstrap</li><li>SASS</li></ul>
+            </li>
+
+            <li class="tl tl--more" hidden>
+              <h3 class="tl__role">Frontend Developer</h3>
+              <p class="tl__org">Vinmus CRM <span aria-hidden="true">·</span> BYS</p>
+              <p class="tl__meta"><span>Dec 2015 — Feb 2016</span> <span aria-hidden="true">·</span> <span>Vietnam</span></p>
+              <p class="tl__text">Built CRM modules on one of the earliest Angular 2 releases.</p>
+              <ul class="tl__tags"><li>Angular 2</li><li>Angular Material</li><li>Bootstrap</li><li>SASS</li></ul>
+            </li>
+          </ol>
+
+          <button type="button" class="btn btn--ghost btn--block" data-more-toggle aria-expanded="false">
+            <span>Show earlier roles</span>
+          </button>
+
+          <div class="edu">
+            <span class="edu__icon"><svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg></span>
+            <div>
+              <h3 class="edu__title">Da Nang University of Science and Technology</h3>
+              <p class="edu__meta">Information Technology <span aria-hidden="true">·</span> 2014 — 2017 <span aria-hidden="true">·</span> Da Nang, Vietnam</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 · Projects -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+          <p class="eyebrow"><span>04</span> / Projects</p>
+          <h2 id="projects-title" class="section__title">Things I've built</h2>
+
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile apps</button>
+            <button type="button" class="filter" data-filter="open-source" aria-pressed="false">Open source</button>
+            <button type="button" class="filter" data-filter="desktop" aria-pressed="false">Desktop</button>
+          </div>
+          <p class="filters__count" data-filter-count aria-live="polite"></p>
+
+          <ul class="projects">
+            <li class="project" data-category="mobile">
+              <div class="project__head">
+                <img class="project__icon" src="/assets/images/apps/two-factor-author.png" width="56" height="56"
+                  alt="Two Factor Author app icon" loading="lazy" decoding="async">
+                <div>
+                  <h3 class="project__title">Two Factor Author</h3>
+                  <p class="project__cat">Mobile app</p>
+                </div>
+              </div>
+              <p class="project__text">A two-factor authentication app that generates time-based one-time
+                passcodes (TOTP) to keep your accounts secure.</p>
+              <ul class="project__tags"><li>Flutter</li><li>Dart</li><li>Security</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--live">Live on Google Play</span>
+                <a class="project__link" href="https://play.google.com/store/apps/details?id=com.codertapsu.two_factor_author"
+                  target="_blank" rel="noopener noreferrer">
+                  Google Play <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="project" data-category="mobile">
+              <div class="project__head">
+                <img class="project__icon" src="/assets/images/apps/currency-converter.png" width="56" height="56"
+                  alt="Currency Converter app icon" loading="lazy" decoding="async">
+                <div>
+                  <h3 class="project__title">Currency Converter</h3>
+                  <p class="project__cat">Mobile app</p>
+                </div>
+              </div>
+              <p class="project__text">A fast currency converter with up-to-date exchange rates and a clean,
+                offline-friendly interface.</p>
+              <ul class="project__tags"><li>Flutter</li><li>Dart</li><li>REST</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--live">Live on Google Play</span>
+                <a class="project__link" href="https://play.google.com/store/apps/details?id=com.codertapsu.currency_converter"
+                  target="_blank" rel="noopener noreferrer">
+                  Google Play <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="project" data-category="mobile">
+              <div class="project__head">
+                <img class="project__icon" src="/assets/images/apps/xiangqi-strategist.png" width="56" height="56"
+                  alt="Xiangqi Strategist app icon" loading="lazy" decoding="async">
+                <div>
+                  <h3 class="project__title">Xiangqi Strategist</h3>
+                  <p class="project__cat">Mobile app</p>
+                </div>
+              </div>
+              <p class="project__text">A Chinese chess (Xiangqi) engine that analyzes positions and suggests
+                strong moves to sharpen your game.</p>
+              <ul class="project__tags"><li>Flutter</li><li>Dart</li><li>Game AI</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--live">Live on Google Play</span>
+                <a class="project__link" href="https://play.google.com/store/apps/details?id=com.codertapsu.xiangqi_solver"
+                  target="_blank" rel="noopener noreferrer">
+                  Google Play <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="project" data-category="open-source desktop">
+              <div class="project__head">
+                <span class="project__icon project__icon--glyph"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></span>
+                <div>
+                  <h3 class="project__title">VideoDubber</h3>
+                  <p class="project__cat"><code>codertapsu/multilingual-dubbed-video</code></p>
+                </div>
+              </div>
+              <p class="project__text">A desktop app that dubs videos into other languages fully offline —
+                local Whisper, Argos Translate and Piper, with no per-minute cloud costs.</p>
+              <ul class="project__tags"><li>Tauri</li><li>TypeScript</li><li>AI</li><li>Offline</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--oss">Open source</span>
+                <a class="project__link" href="https://github.com/codertapsu/multilingual-dubbed-video"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="project" data-category="open-source desktop">
+              <div class="project__head">
+                <span class="project__icon project__icon--glyph"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></span>
+                <div>
+                  <h3 class="project__title">Mother Claude</h3>
+                  <p class="project__cat"><code>codertapsu/mother-claude</code></p>
+                </div>
+              </div>
+              <p class="project__text">One dashboard — desktop and phone — to monitor and control every local
+                Claude Code session, agent and service over your network.</p>
+              <ul class="project__tags"><li>Tauri</li><li>Rust</li><li>Angular</li><li>WebSocket</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--oss">Open source</span>
+                <a class="project__link" href="https://github.com/codertapsu/mother-claude"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="project" data-category="desktop">
+              <div class="project__head">
+                <span class="project__icon project__icon--glyph"><svg class="icon" aria-hidden="true"><use href="#i-monitor"></use></svg></span>
+                <div>
+                  <h3 class="project__title">Douyin Downloader</h3>
+                  <p class="project__cat">Desktop app</p>
+                </div>
+              </div>
+              <p class="project__text">A Windows desktop tool for downloading Douyin / TikTok videos,
+                distributed as a ready-to-run release.</p>
+              <ul class="project__tags"><li>Electron</li><li>Desktop</li><li>Windows</li></ul>
+              <div class="project__foot">
+                <span class="badge badge--oss">Release</span>
+                <a class="project__link" href="https://github.com/codertapsu/douyin-downloader-releases"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub <svg class="icon icon--sm" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <p class="projects__more">
+            More on <a href="https://github.com/codertapsu" target="_blank" rel="noopener noreferrer">github.com/codertapsu</a>.
+          </p>
+        </section>
+
+        <!-- 05 · Contact -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+          <p class="eyebrow"><span>05</span> / Contact</p>
+          <h2 id="contact-title" class="section__title">Let's build something</h2>
+
+          <p class="lead">Open to senior engineering and architecture roles, consulting and interesting
+            collaborations. The fastest way to reach me is email.</p>
+
+          <div class="contact-grid">
+            <button type="button" class="copy-email" data-copy-email data-email="hoangduykhanh21@gmail.com">
+              <span class="copy-email__label">
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                <span class="copy-email__value">hoangduykhanh21@gmail.com</span>
+              </span>
+              <span class="copy-email__action">
+                <svg class="icon icon--copy" aria-hidden="true"><use href="#i-copy"></use></svg>
+                <svg class="icon icon--check" aria-hidden="true"><use href="#i-check"></use></svg>
+                <span class="copy-email__state">Copy</span>
+              </span>
+            </button>
+            <span class="visually-hidden" role="status" aria-live="polite" data-copy-status></span>
+
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+84368438486">
+                  <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+                  <span><span class="contact-list__k">Phone</span> +84 36 843 8486</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/khanhhoangdn" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+                  <span><span class="contact-list__k">LinkedIn</span> in/khanhhoangdn</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/codertapsu" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+                  <span><span class="contact-list__k">GitHub</span> codertapsu</span>
+                </a>
+              </li>
+              <li>
+                <span>
+                  <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+                  <span><span class="contact-list__k">Location</span> Da Nang, Vietnam (GMT+7)</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!--
+            Contact form powered by Web3Forms (https://web3forms.com) — no backend needed.
+            access_key is a public, client-side key (safe to commit; restrict it by domain in
+            the Web3Forms dashboard). JS submits via fetch with inline status; with JS disabled
+            it posts natively to Web3Forms. The form falls back to the visitor's email app only
+            if the key is removed or the request fails.
+          -->
+          <form class="form" data-contact-form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4ccd913b-5e5c-41d6-a3e1-aa2f82bb2813">
+            <input type="hidden" name="subject" value="New message from codertapsu.github.io">
+            <input type="hidden" name="from_name" value="codertapsu.github.io portfolio">
+            <!-- honeypot: real people never see this; bots that fill it are dropped -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <p class="form__hint">Send a message and I'll get back to you as soon as I can.</p>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="form__field">
+                <label for="cf-email">Your email</label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" data-form-submit>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              <span data-form-submit-label>Send message</span>
+            </button>
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__brand">
+          <span class="footer__mark">Marcus</span>
+          <span class="footer__sub">/ codertapsu</span>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <ul class="footer__social">
+          <li><a href="https://github.com/codertapsu" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/khanhhoangdn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=codertapsu" target="_blank" rel="noopener noreferrer" aria-label="Google Play (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg></a></li>
+        </ul>
+        <p class="footer__note">© <span data-year>2026</span> Khanh Hoang (Marcus). Built static with vanilla HTML, CSS &amp; JS.</p>
+      </footer>
+    </div>
+  </div>
+
+  <a class="to-top" href="#about" data-to-top aria-label="Back to top" hidden>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+  </a>
+
+  <script src="/assets/js/script.js" defer></script>
+</body>
 
 </html>
