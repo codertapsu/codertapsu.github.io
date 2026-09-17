@@ -23,6 +23,9 @@
   --success: #34d399;
   --success-tint: rgba(52, 211, 153, 0.13);
   --danger: #f87171;
+  /* edge ring for full-bleed app-icon tiles, so a tile whose own background is
+     close to the card surface still reads as a tile */
+  --icon-ring: rgba(255, 255, 255, 0.1);
 
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.22);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -62,6 +65,7 @@
   --success: #047857;
   --success-tint: rgba(4, 120, 87, 0.1);
   --danger: #c5221f;
+  --icon-ring: rgba(0, 0, 0, 0.1);
 
   --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 12px 28px rgba(16, 24, 40, 0.08);
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.08);
@@ -991,13 +995,16 @@ main {
   height: 56px;
   border-radius: var(--radius-xs);
   flex: none;
+  /* outline, not box-shadow — a replaced element paints its image over an inset shadow */
+  outline: 1px solid var(--icon-ring);
+  outline-offset: -1px;
 }
 
 .project__icon--glyph {
   display: inline-grid;
   place-items: center;
   background: var(--bg);
-  border: 1px solid var(--border);
+  outline-color: var(--border);
   color: var(--text-muted);
 }
 
@@ -1529,6 +1536,7 @@ main {
    ========================================================================= */
 @media print {
   :root {
+    --icon-ring: rgba(0, 0, 0, 0.25);
     --bg: #fff;
     --surface: #fff;
     --surface-2: #fff;
